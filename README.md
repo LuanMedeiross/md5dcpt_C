@@ -6,5 +6,5 @@
 ### Usage:
 `./md5dcpt <hash> <hash_file>`
 
-### About hash file
-The lines in the hash file must be like: **hash:string**
+### About hashes file
+The lines must be like: **hash:string**
