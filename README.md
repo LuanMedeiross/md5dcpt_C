@@ -1,4 +1,4 @@
-# md5dcpt_C
+# MD5 Decrypting with C
 
 #### Compiling
 
