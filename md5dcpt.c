@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 
-#define MLL 128 // Max Line Length
+#define MLL 216 // Max Line Length
 
 int main(int argc, char **argv) {
 	
@@ -21,6 +22,7 @@ int main(int argc, char **argv) {
 				char fHash[MLL];
 				char *hash;
 				char *string;
+				bool found = false;
 
 				while (fgets(fHash, MLL, hashes) != NULL) {
 
@@ -31,9 +33,14 @@ int main(int argc, char **argv) {
 
 					// Comparing if hash and argv are equal
 					if (strcmp(hash, argv[1]) == 0) {
-						printf("Hash found! %s\n", string);
+						printf("Hash found!\n%s\n", string);
+						found = true;
 						break;
 					}
+				}
+
+				if (!found) {
+					printf("Hash not found :(\n");
 				}
 
 				fclose(hashes);
