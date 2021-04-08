@@ -7,4 +7,4 @@
 `./md5dcpt <hash> <hash_file>`
 
 ### About hash file
-The hash file content must to be: <hash>:<word>
+The hash file content must to be: *hash:word*
