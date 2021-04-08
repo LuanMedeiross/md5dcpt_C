@@ -6,4 +6,4 @@
 
 #### Usage:
 
-`./md5dcpt **<hash>** **<hash_file>**`
+`./md5dcpt *<hash>* *<hash_file>*`
